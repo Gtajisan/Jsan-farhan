@@ -1,111 +1,111 @@
 
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en-US">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tas33n's Link Tree</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="icon" href="https://avatars0.githubusercontent.com/u/55633040" type="image/x-icon" />
-</head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-    
-  <!--   <div id="opc">
-           
-    <iframe src="https://tas33n.github.io/mini-player/" frameborder="0" scrolling="no" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%">Your Browser Fucked UP.</iframe>  
-   
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>WIPWN | wipwn</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="WIPWN" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Hack wifi using termux (rooted)." />
+<meta property="og:description" content="Hack wifi using termux (rooted)." />
+<link rel="canonical" href="https://anbuinfosec.github.io/wipwn/" />
+<meta property="og:url" content="https://anbuinfosec.github.io/wipwn/" />
+<meta property="og:site_name" content="wipwn" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="WIPWN" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Hack wifi using termux (rooted).","headline":"WIPWN","name":"wipwn","url":"https://anbuinfosec.github.io/wipwn/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/wipwn/assets/css/style.css?v=41b6a100e4b9f5be38866f667b0e2082c87c207a">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/wipwn/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://anbuinfosec.github.io/wipwn/">wipwn</a></h1>
+      
+
+      <h1 id="wipwn">WIPWN</h1>
+
+<p><img src="/wipwn/images/image.png" alt="Logo" /></p>
+
+<h3 id="hack-wifi-using-termux-rooted">Hack wifi using Termux (rooted)</h3>
+
+<ul>
+  <li>[Requirements]
+    <ul>
+      <li><a href="https://www.python.org">Python</a></li>
+      <li><a href="https://www.kali.org/tools/pixiewps/">Pixiewps</a></li>
+      <li><a href="https://wiki.archlinux.org/title/wpa_supplicant">Wpa-supplicant</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="installation-">Installation :</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pkg update <span class="o">&amp;&amp;</span> pkg upgrade <span class="nt">-y</span>
+pkg <span class="nb">install </span>root-repo <span class="nt">-y</span>
+pkg <span class="nb">install </span>git tsu python wpa-supplicant pixiewps iw <span class="nt">-y</span>
+git clone https://github.com/anbuinfosec/wipwn
+<span class="nb">cd </span>wipwn
+<span class="nb">chmod</span> +x main.py
+</code></pre></div></div>
+
+<h4 id="help--sudo-python-main---help">Help : <code class="language-plaintext highlighter-rouge">sudo python main --help</code></h4>
+<h4 id="example--sudo-python-mainpy--i-wlan0--k">Example : <code class="language-plaintext highlighter-rouge">sudo python main.py -i wlan0 -K</code></h4>
+
+<h4 id="note">Note:</h4>
+<ul>
+  <li><strong>First turn off your Wifi.</strong></li>
+  <li><strong>Turn on Hotspot.</strong></li>
+  <li><strong>Turn on Location.</strong></li>
+  <li>Show avaliable networks and start Pixie Dust attack on a specified network.</li>
+  <li><code class="language-plaintext highlighter-rouge">sudo python main.py -i wlan0 -K</code></li>
+  <li><code class="language-plaintext highlighter-rouge">bash wipwn.sh</code></li>
+  <li>
+    <ul>
+      <li>Start Pixie Dust attack on a specified BSSID:
+<code class="language-plaintext highlighter-rouge">sudo python main.py -i wlan0 -b 00:91:4C:C3:AC:28 -K</code></li>
+    </ul>
+  </li>
+  <li>Launch online WPS bruteforce with the specified first half of the PIN:</li>
+  <li><code class="language-plaintext highlighter-rouge">sudo python main.py -i wlan0 -b 50:0F:F5:B0:08:05 -B -p 1234</code>
+    <h3 id="troubleshooting">Troubleshooting</h3>
+    <p><strong>“Device or resource busy (-16)” - Turn on Wifi and Then Turn off Wifi.</strong></p>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="️-thanks-for-stars-and-forks">❤️ Thanks for stars and forks</h3>
+<p><a href="https://github.com/anbuinfosec/wipwn/stargazers"><img src="https://reporoster.com/stars/dark/anbuinfosec/wipwn" alt="Stargazers repo roster for @anbuinfosec/wipwn" /></a>
+<a href="https://github.com/anbuinfosec/wipwn/network/members"><img src="https://reporoster.com/forks/dark/anbuinfosec/wipwn" alt="Forkers repo roster for @anbuinfosec/wipwn" /></a></p>
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/anbuinfosec/wipwn/edit/main/README.md">Improve this page</a>.
+      </div>
+      
     </div>
-    
-<button id="btn"><i class="fas fa-music"></i></button> -->
-         
-    <section class="animated-background">
-        <div id="stars1"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-    </section>
-    
-   
-    <a id="profilePicture" href="#popup">
-        <img src="https://avatars0.githubusercontent.com/u/55633040" alt="Profile Picture">
-    </a>
-
-    <div class="overlay" id="popup">
-        <div class="popup">
-            <div class="popup-photo">
-                <a href="https://avatars0.githubusercontent.com/u/55633040" target="_blank">
-                    <img src="https://avatars0.githubusercontent.com/u/55633040" alt="Profile Picture">
-                </a>
-            </div>
-            <div class="popup-quote">
-		    Hey 👋🏻, <br>
-                I am Taseen.I am a lazy person who love to surf online. I dunno any programming language but i can build and design website, still noob though. My hobby is trying to do something new. But i get bord after accomplishing something new so i throw it away after sometime. Love to do little things like building website, cracking android app, sometime video editing, helping my online friends and more.
-            </div>
-
-            <a class="popup-close" onclick="history.back()">&times;</a>
-        </div>
-    </div>
-
-    
-<div id="userName">
-        Farhan Isteak Taseen
-    </div>
-<div id="userName">
-        @Tas33n
-    </div>
-
-    <div id="links">
-        <a class="link" href="https://github.com/Tas33n" target="_blank">
-		<span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-		<i
-                class="fab fa-github">&nbsp;</i>Github</a>
-       <a class="link" href="https://www.facebook.com/tasu.legend" target="_blank"><i
-                class="fab fa-facebook">&nbsp;</i>Facebook</a>
-	 <a class="link" href="https://redthryssa.xyz/" target="_blank"><i
-                class="fas fa-project-diagram">&nbsp;</i>Portfolio</a>
-	<a class="link" href="https://t.me/t_4_s_u" target="_blank"><i
-                class="fab fa-telegram">&nbsp;</i>Telegram</a>
-        <a class="link" href="https://www.instagram.com/tasu_lf" target="_blank"><i
-                class="fab fa-instagram">&nbsp;</i>Instagram</a>
-        <a class="link" href="https://twitter.com/t_4_s_u" target="_blank"><i
-                class="fab fa-twitter">&nbsp;</i>Twitter</a>
-        <a class="link" href="https://inboxkiller.xyz" target="_blank"><i
-                class="fas fa-globe">&nbsp;</i>Inboxkiller</a>
-       <a class="link" href="https://myanimelist.net/profile/tas33n" target="_blank"><i
-                class="fa fa-play-circle">&nbsp;</i>MyAnimeList</a>
-	    <a class="link" href="https://www.facebook.com/s0l0.legend" target="_blank"><i
-                class="fab fa-facebook">&nbsp;</i>Backup Facebook</a>
-	    <a class="link" href="http://portauthor.cf" target="_blank"><i
-                class="fas fa-globe">&nbsp;</i>PortAuthor (NEW)</a>
-    </div>
-
-    <div id="hashtag">
-        #otaku senpai
-    </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-<script>
-document.write(unescape('%3c%61%20%68%72%65%66%3d%22%68%74%74%70%73%3a%2f%2f%67%69%74%68%75%62%2e%63%6f%6d%2f%74%61%73%33%33%6e%22%20%73%74%79%6c%65%3d%22%0d%0a%20%20%20%20%74%65%78%74%2d%64%65%63%6f%72%61%74%69%6f%6e%3a%20%6e%6f%6e%65%3b%0d%0a%20%20%20%20%63%6f%6c%6f%72%3a%20%77%68%69%74%65%3b%0d%0a%20%20%20%20%6f%70%61%63%69%74%79%3a%20%30%2e%34%3b%0d%0a%20%20%20%20%6c%65%66%74%3a%20%30%3b%0d%0a%20%20%20%20%70%6f%73%69%74%69%6f%6e%3a%20%66%69%78%65%64%3b%0d%0a%20%20%20%20%62%6f%74%74%6f%6d%3a%20%30%3b%0d%0a%20%20%20%20%66%6f%6e%74%2d%73%69%7a%65%3a%20%31%32%70%78%3b%0d%0a%22%3e%6d%61%64%65%20%77%69%74%68%20%26%23%39%38%32%35%3b%20%62%79%20%74%61%73%33%33%6e%3c%2f%61%3e'));
-$(document).ready(function(){
-  $("#btn").click(function(){
-    $("#opc").toggleClass("active");
-  });
-});
-    
-    VanillaTilt.init(document.querySelectorAll(".link"), {
-		max: 10,
-        speed: 400,
-        easing:"cubic-bezier(.03,.98,.52,.99)",
-        perspective:500,
-        transition:true
-    });
-</script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
 </html>
